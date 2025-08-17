@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="../css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+          
+            LaoKang Blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="../../../../index.html" class="mdui-typo-headline">LaoKang Blog</a>
+    <a href="../../../../index.html" class="header-subtitle mdui-typo-headline">穷则独善其身，达则兼济天下</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="../../../../search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="../../../../index.html" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="../../../../tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="../../../../categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="../../../../archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="../../../../tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="../../../../about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">LaoKang</div>
+            <div class="sidebar-description">技术开发博客</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="../../../../mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href=""></a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2025-08-17
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2025-08-17
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/&pic=http://example.com../../../../favicon.ico&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=&url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/&via=LaoKang" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/&title=" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=LaoKang Blog&title=&summary=技术开发博客&pics=http://example.com../../../../favicon.ico&url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2025/08/17/Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo-md-Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo/&text=" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="Docker-搭建部署-SpringCloud-微服务项目-Demo"><a href="#Docker-搭建部署-SpringCloud-微服务项目-Demo" class="headerlink" title="Docker 搭建部署 SpringCloud 微服务项目 Demo"></a>Docker 搭建部署 SpringCloud 微服务项目 Demo</h1><blockquote>
+<p>原文地址 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962186.html">https://www.cnblogs.com/xiangningdeguang/p/16962186.html</a></p>
+</blockquote>
+<h2 id="十四、Docker-入门系列-–Docker-搭建部署-SpringCloud-微服务项目-Demo"><a href="#十四、Docker-入门系列-–Docker-搭建部署-SpringCloud-微服务项目-Demo" class="headerlink" title="十四、Docker 入门系列 –Docker 搭建部署 SpringCloud 微服务项目 Demo"></a>十四、Docker 入门系列 –Docker 搭建部署 SpringCloud 微服务项目 Demo</h2><p>系列文章地址：<br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962054.html">一、Docker 入门系列 –Docker 简介</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962068.html">二、Docker 入门系列 –Docker 安装</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962082.html">三、Docker 入门系列 –Docker 常用命令</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962091.html">四、Docker 入门系列 –Docker 镜像</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962109.html">五、Docker 入门系列 –Docker 容器数据卷</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962128.html">六、Docker 入门系列 –DockerFlie 解析</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962137.html">七、Docker 入门系列 – 使用 DockerFlie 自定义 Tomcat 镜像</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962143.html">八、Docker 入门系列 –Docker 常用安装</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962151.html">九、Docker 入门系列 – 本地镜像发布到阿里云</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962155.html">十、Docker 入门系列 –Docker-Compose 简介和安装</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962165.html">十一、Docker 入门系列 –Docker-Compose 模板命令</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962171.html">十二、Docker 入门系列 –Docker-Compose 常用命令</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962177.html">十三、Docker 入门系列 –Portainer 可视化 Docker</a><br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiangningdeguang/p/16962186.html">十四、Docker 入门系列 –Docker 搭建部署 SpringCloud 微服务项目 Demo</a></p>
+<h3 id="14-1-环境介绍"><a href="#14-1-环境介绍" class="headerlink" title="14.1 环境介绍"></a>14.1 环境介绍</h3><p>技术选型：<code>SpringCloud</code>​&amp;<code>SpringCloud Alibaba</code>​&amp;<code>Docker</code>​</p>
+<p>微服务模块划分：</p>
+<ul>
+<li>员工模块：ems-employees</li>
+<li>部门模块：ems-departments</li>
+<li>网关模块：ems-gateway</li>
+<li>公共模块：ems-commons</li>
+</ul>
+<p><strong>其他环境</strong>：</p>
+<p>Mysql8.0+、nacos1.3+、JDK1.8</p>
+<p>前置准备知识：</p>
+<p>​<code>SpringCloud</code>​、<code>SpringCloud alibaba</code>​、<code>Docker</code>​、<code>Docker-Compose</code>​、<code>Dockerfile</code>​</p>
+<p>数据库结构：</p>
+<p>一个部门表和一个员工表，员工表里面有个部门 ID 和部门表主键相关联</p>
+<p>数据库 sql 脚本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">use ems</span><br><span class="line"></span><br><span class="line">SET NAMES utf8mb4;</span><br><span class="line">SET FOREIGN_KEY_CHECKS = 0;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for department</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `department`;</span><br><span class="line">CREATE TABLE `department` (</span><br><span class="line">  `id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `name` varchar(80) DEFAULT NULL COMMENT &#x27;部门名称&#x27;,</span><br><span class="line">  `created_at` datetime DEFAULT NULL COMMENT &#x27;创建时间&#x27;,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for employee</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `employee`;</span><br><span class="line">CREATE TABLE `employee` (</span><br><span class="line">  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `name` varchar(40) DEFAULT NULL,</span><br><span class="line">  `birthday` datetime DEFAULT NULL COMMENT &#x27;生日&#x27;,</span><br><span class="line">  `salary` double(10,2) DEFAULT NULL COMMENT &#x27;工资&#x27;,</span><br><span class="line">  `department_id` int(11) DEFAULT NULL COMMENT &#x27;部门信息&#x27;,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br><span class="line"></span><br><span class="line">SET FOREIGN_KEY_CHECKS = 1;</span><br></pre></td></tr></table></figure>
+
+<h4 id="14-1-1-部署流程"><a href="#14-1-1-部署流程" class="headerlink" title="14.1.1 部署流程"></a>14.1.1 部署流程</h4><ul>
+<li>先在服务器安装 Docker，然后在 Docker 中安装 mysql、nacos 镜像，并启动容器</li>
+<li>在员工、部门等微服务模块中指定 nacos 注册中心地址，使服务注册进去</li>
+<li>把 springcloud 微服务模块打包成 jar 包上传至服务器，然后通过 Dockerfile 构建成镜像</li>
+<li>最后通过 docker-compose 构建编排项目，将这些微服务镜像打包成一整个项目并启动</li>
+</ul>
+<h3 id="14-2-环境搭建"><a href="#14-2-环境搭建" class="headerlink" title="14.2 环境搭建"></a>14.2 环境搭建</h3><h4 id="14-2-1-Centos7-X-安装-Docker"><a href="#14-2-1-Centos7-X-安装-Docker" class="headerlink" title="14.2.1 Centos7.X 安装 Docker"></a>14.2.1 Centos7.X 安装 Docker</h4><p>网上操作教程很多，略</p>
+<h4 id="14-2-2-Docker-安装-mysql、nacos-镜像"><a href="#14-2-2-Docker-安装-mysql、nacos-镜像" class="headerlink" title="14.2.2 Docker 安装 mysql、nacos 镜像"></a>14.2.2 Docker 安装 mysql、nacos 镜像</h4><h5 id="安装-mysql"><a href="#安装-mysql" class="headerlink" title="安装 mysql"></a>安装 mysql</h5><p>1、没有指定版本一般安装的都是最新的 8.0+</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql</span><br></pre></td></tr></table></figure>
+
+<p>2、docker 启动 mysql，简单演示就没有创建数据卷了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name=mysql01 -it -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql</span><br></pre></td></tr></table></figure>
+
+<p>3、启动成功</p>
+<p>​<img src="assets/1750641025141-20250623091025-ihucit3.png">​</p>
+<p>4、进入 mysql 容器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it  mysql01 /bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>5、登陆 mysql</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+
+<p>6、授权所有用户可以登录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON *.* TO &#x27;root&#x27;@&#x27;%&#x27;WITH GRANT OPTION;</span><br></pre></td></tr></table></figure>
+
+<p>7、刷新权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+
+<p>8、使用客户端连接</p>
+<p>​<img src="assets/1750641025203-20250623091025-b16obi0.png">​</p>
+<h5 id="安装-nacos"><a href="#安装-nacos" class="headerlink" title="安装 nacos"></a>安装 nacos</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull nacos/nacos-server:1.3.0</span><br></pre></td></tr></table></figure>
+
+<p>1、运行 nacos</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run  --name nacos-quick -e  MODE=standalone -p 8848:8848 -d nacos/nacos-server:1.3.0</span><br></pre></td></tr></table></figure>
+
+<p>2、查看 nacos 运行日志</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs -f b1aacab47d2a</span><br></pre></td></tr></table></figure>
+
+<p>​<img src="assets/1750641025231-20250623091025-zw11167.png">​</p>
+<p>表示启动成功</p>
+<p>3、访问成功</p>
+<p>​<img src="assets/1750641025262-20250623091025-wtl52x9.png">​</p>
+<p>默认用户名登录密码都是 nacos</p>
+<h4 id="14-2-3-搭建-SpringCloud-微服务模块"><a href="#14-2-3-搭建-SpringCloud-微服务模块" class="headerlink" title="14.2.3 搭建 SpringCloud 微服务模块"></a>14.2.3 搭建 SpringCloud 微服务模块</h4><h5 id="搭建父工程模块"><a href="#搭建父工程模块" class="headerlink" title="搭建父工程模块"></a>搭建父工程模块</h5><p>​<img src="assets/1750641025294-20250623091025-1zu688v.png">​</p>
+<p>​<img src="assets/1750641025326-20250623091025-goamzv1.png">​</p>
+<p>​<img src="assets/1750641025358-20250623091025-ijdkgeo.png">​</p>
+<p>父工程的必须遵循以下两点要求：</p>
+<ol>
+<li>父工程的 packaging 标签的文本内容必须设置为 pom，如果不指定会默认打包成 jar 包</li>
+<li>删除 src 目录</li>
+</ol>
+<p>​<img src="assets/1750641025387-20250623091025-ivqp5yk.png">​</p>
+<p>搭建父工程的 pom 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</span><br><span class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">    &lt;groupId&gt;com.ylc&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springcloud-dockerDemo&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;packaging&gt;pom&lt;/packaging&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line">        &lt;mysql.version&gt;8.0.23&lt;/mysql.version&gt;</span><br><span class="line">        &lt;spring.cloud.version&gt;Hoxton.SR1&lt;/spring.cloud.version&gt;</span><br><span class="line">        &lt;spring.cloud.alibaba.version&gt;2.2.0.RELEASE&lt;/spring.cloud.alibaba.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependencyManagement&gt;</span><br><span class="line">        &lt;dependencies&gt;</span><br><span class="line">            &lt;!--spring cloud Hoxton.SR1--&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;$&#123;spring.cloud.version&#125;&lt;/version&gt;</span><br><span class="line">                &lt;type&gt;pom&lt;/type&gt;</span><br><span class="line">                &lt;scope&gt;import&lt;/scope&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">            &lt;!--spring cloud alibaba 2.1.0.RELEASE--&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-cloud-alibaba-dependencies&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;$&#123;spring.cloud.alibaba.version&#125;&lt;/version&gt;</span><br><span class="line">                &lt;type&gt;pom&lt;/type&gt;</span><br><span class="line">                &lt;scope&gt;import&lt;/scope&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;$&#123;mysql.version&#125;&lt;/version&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">        &lt;/dependencies&gt;</span><br><span class="line">    &lt;/dependencyManagement&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="搭建员工子模块"><a href="#搭建员工子模块" class="headerlink" title="搭建员工子模块"></a>搭建员工子模块</h5><p>​<img src="assets/1750641025433-20250623091025-wnv9a3r.png">​</p>
+<p>​<img src="assets/1750641025862-20250623091025-pf03tub.png">​</p>
+<p>点击下一步最后完成</p>
+<p>​<img src="assets/1750641025901-20250623091025-nswt1h7.png">​</p>
+<p>删除一些没用的文件 HELP.md、MVNW 等等，修改子项目的 pom.xml 文件的继承关系</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 确认继承关系 --&gt;</span><br><span class="line">    &lt;parent&gt;</span><br><span class="line">        &lt;!--父工程 gropuId--&gt;</span><br><span class="line">        &lt;groupId&gt;com.ylc&lt;/groupId&gt;</span><br><span class="line">        &lt;!--父工程 artifactId--&gt;</span><br><span class="line">        &lt;artifactId&gt;springcloud-dockerDemo&lt;/artifactId&gt;</span><br><span class="line">        &lt;!--父工程 版本--&gt;</span><br><span class="line">        &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;/parent&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;ems-employess&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;/java.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;!--web--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--nacos-service-discovery-client--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-cloud-starter-alibaba-nacos-discovery&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--druid mysql mybatis--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;druid&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.2.6&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--mysql--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;8.0.23&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.2.0&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--远程调用openfegin--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-cloud-starter-openfeign&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.10.1&lt;/version&gt;</span><br><span class="line">            &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;2.3.4.RELEASE&lt;/version&gt;</span><br><span class="line">                &lt;configuration&gt;</span><br><span class="line">                    &lt;fork&gt;true&lt;/fork&gt;</span><br><span class="line">                    &lt;addResources&gt;true&lt;/addResources&gt;</span><br><span class="line">                &lt;/configuration&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在父工程 pom.xml 中 添加子模块标识</p>
+<p>​<img src="assets/1750641025944-20250623091025-93mv994.png">​</p>
+<p>开启服务注册中心 nacos, 并开启远程调用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@EnableFeignClients</span><br><span class="line">@EnableDiscoveryClient</span><br><span class="line">@SpringBootApplication</span><br><span class="line">public class EmsEmploysApplication &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(EmsEmploysApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在配置文件<code>application.properties</code>​配置 nacos 的参数、以及数据源配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">server.port=8085</span><br><span class="line">spring.application.name=DEPARTMENTS</span><br><span class="line">spring.cloud.nacos.server-addr=xxx:8848</span><br><span class="line"># datasource</span><br><span class="line">spring.datasource.type=com.alibaba.druid.pool.DruidDataSource</span><br><span class="line">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver</span><br><span class="line">spring.datasource.url=jdbc:mysql://xxxx:3306/ems?useSSL=false&amp;characterEncoding=UTF-8</span><br><span class="line">spring.datasource.username=root</span><br><span class="line">spring.datasource.password=123456</span><br><span class="line"># mybatis</span><br><span class="line">mybatis.type-aliases-package=com.ylc.entity</span><br><span class="line">mybatis.mapper-locations=classpath:com/ylc/mapper/*.xml</span><br><span class="line"># log</span><br><span class="line">logging.level.com.ylc=debug</span><br></pre></td></tr></table></figure>
+
+<p>在<code>bootstrap.properties</code>​中配置 nacos</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">spring.cloud.nacos.config.server-addr=121.43.33.150:8848</span><br><span class="line">spring.cloud.nacos.discovery.server-addr=121.43.33.150:8848</span><br></pre></td></tr></table></figure>
+
+<p>在 idea 中远程连接 mysql</p>
+<p>​<img src="assets/1750641025978-20250623091025-zo33q4s.png">​</p>
+<p>然后利用 idea 中安装的插件 Easycode，根据表去生成 service、controller、dao、mapper 相关代码</p>
+<p>点击这个</p>
+<p>​<img src="assets/1750641026004-20250623091026-nbtksm2.png">​</p>
+<p>module 代表生成的模块</p>
+<p>package：包名</p>
+<p>path：生成的路径</p>
+<p>​<img src="assets/1750641026037-20250623091026-cjrjeel.png">​</p>
+<p>最后生成成功</p>
+<p>​<img src="assets/1750641026067-20250623091026-qfunwi4.png">​</p>
+<p>其中有分页部分爆红的方法，删掉就行了，只简单演示</p>
+<p>然后记得添加相关注解 @Mapper、@Service、@Repository 等等</p>
+<p>访问成功</p>
+<p>​<img src="assets/1750641026103-20250623091026-kr2alwf.png">​</p>
+<h5 id="搭建部门子模块"><a href="#搭建部门子模块" class="headerlink" title="搭建部门子模块"></a>搭建部门子模块</h5><p>按照上一个模块流程搭建，pom 文件也是相同的，端口改为 8086</p>
+<p>访问成功</p>
+<p>​<img src="assets/1750641026145-20250623091026-tdo275f.png">​</p>
+<h5 id="抽取公共模块"><a href="#抽取公共模块" class="headerlink" title="抽取公共模块"></a>抽取公共模块</h5><p>上面两个微服务会有重复代码，抽取公共部分包含项目一些公共的类以及 jar 包</p>
+<p>Department</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">package com.ylc;</span><br><span class="line"></span><br><span class="line">import java.io.Serializable;</span><br><span class="line">import java.util.Date;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author yanglingcong</span><br><span class="line"> * 部门类</span><br><span class="line"> */</span><br><span class="line">public class Department implements Serializable &#123;</span><br><span class="line">    private static final long serialVersionUID = 279210942586979318L;</span><br><span class="line"></span><br><span class="line">    private Integer id;</span><br><span class="line">    /**</span><br><span class="line">     * 部门名称</span><br><span class="line">     */</span><br><span class="line">    private String name;</span><br><span class="line">    /**</span><br><span class="line">     * 创建时间</span><br><span class="line">     */</span><br><span class="line">    private Date createdAt;</span><br><span class="line"></span><br><span class="line">    private Employee employee;</span><br><span class="line"></span><br><span class="line">    public Employee getEmployee() &#123;</span><br><span class="line">        return employee;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setEmployee(Employee employee) &#123;</span><br><span class="line">        this.employee = employee;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getId() &#123;</span><br><span class="line">        return id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setId(Integer id) &#123;</span><br><span class="line">        this.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Date getCreatedAt() &#123;</span><br><span class="line">        return createdAt;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setCreatedAt(Date createdAt) &#123;</span><br><span class="line">        this.createdAt = createdAt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Employee</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">package com.ylc;</span><br><span class="line"></span><br><span class="line">import com.fasterxml.jackson.annotation.JsonProperty;</span><br><span class="line"></span><br><span class="line">import java.io.Serializable;</span><br><span class="line">import java.util.Date;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * (Employee)实体类</span><br><span class="line"> * @author yanglingcong</span><br><span class="line"> */</span><br><span class="line">public class Employee implements Serializable &#123;</span><br><span class="line">    private static final long serialVersionUID = -87055454147065054L;</span><br><span class="line"></span><br><span class="line">    private String id;</span><br><span class="line"></span><br><span class="line">    private String name;</span><br><span class="line">    /**</span><br><span class="line">     * 生日</span><br><span class="line">     */</span><br><span class="line">    private Date birthday;</span><br><span class="line">    /**</span><br><span class="line">     * 工资</span><br><span class="line">     */</span><br><span class="line">    private String salary;</span><br><span class="line">    /**</span><br><span class="line">     * 部门信息</span><br><span class="line">     */</span><br><span class="line">    @JsonProperty(&quot;department_id&quot;)</span><br><span class="line">    private Integer departmentId;</span><br><span class="line"></span><br><span class="line">    private Department department;</span><br><span class="line"></span><br><span class="line">    public Department getDepartment() &#123;</span><br><span class="line">        return department;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setDepartment(Department department) &#123;</span><br><span class="line">        this.department = department;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getId() &#123;</span><br><span class="line">        return id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setId(String id) &#123;</span><br><span class="line">        this.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Date getBirthday() &#123;</span><br><span class="line">        return birthday;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setBirthday(Date birthday) &#123;</span><br><span class="line">        this.birthday = birthday;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getSalary() &#123;</span><br><span class="line">        return salary;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setSalary(String salary) &#123;</span><br><span class="line">        this.salary = salary;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getDepartmentId() &#123;</span><br><span class="line">        return departmentId;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setDepartmentId(Integer departmentId) &#123;</span><br><span class="line">        this.departmentId = departmentId;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>pom 文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</span><br><span class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 确认继承关系 --&gt;</span><br><span class="line">    &lt;parent&gt;</span><br><span class="line">        &lt;!--父工程 gropuId--&gt;</span><br><span class="line">        &lt;groupId&gt;com.ylc&lt;/groupId&gt;</span><br><span class="line">        &lt;!--父工程 artifactId--&gt;</span><br><span class="line">        &lt;artifactId&gt;springcloud-dockerDemo&lt;/artifactId&gt;</span><br><span class="line">        &lt;!--父工程 版本--&gt;</span><br><span class="line">        &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">    &lt;/parent&gt;</span><br><span class="line"></span><br><span class="line">    &lt;artifactId&gt;ems-employess&lt;/artifactId&gt;</span><br><span class="line"></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;java.version&gt;1.8&lt;/java.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;!--web--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--nacos-service-discovery-client--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-cloud-starter-alibaba-nacos-discovery&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--druid mysql mybatis--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;druid&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.2.6&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--mysql--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;8.0.23&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.2.0&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;!--远程调用openfegin--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-cloud-starter-openfeign&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.10.1&lt;/version&gt;</span><br><span class="line">            &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">    &lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;2.3.4.RELEASE&lt;/version&gt;</span><br><span class="line">                &lt;configuration&gt;</span><br><span class="line">                    &lt;fork&gt;true&lt;/fork&gt;</span><br><span class="line">                    &lt;addResources&gt;true&lt;/addResources&gt;</span><br><span class="line">                &lt;/configuration&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br><span class="line"></span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+
+<p>公共模块搭建很简单就两个类，然后在其他模块引用公共模块</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">        &lt;!--公共模块--&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.ylc&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;ems-commons&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">            &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+
+<p>到此就完成了</p>
+<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><p>通过查询员工信息，然后远程调用部门信息</p>
+<p>远程接口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@FeignClient(&quot;DEPARTMENTS&quot;)</span><br><span class="line">public interface DepartmentClient &#123;</span><br><span class="line"></span><br><span class="line">    //部门详细</span><br><span class="line">    @GetMapping(&quot;/department/&#123;id&#125;&quot;)</span><br><span class="line">     Department detail(@PathVariable(&quot;id&quot;) Integer id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>1、接口定义</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> *  查询员工以及部门的详细信息</span><br><span class="line"> * @return List&lt;Employee&gt;</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line"> List&lt;Employee&gt; queryAll();</span><br></pre></td></tr></table></figure>
+
+<p>2、实现类</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public List&lt;Employee&gt; queryAll() &#123;</span><br><span class="line">    List&lt;Employee&gt; employees=employeeDao.queryAll();</span><br><span class="line">    employees.forEach(emp-&gt;&#123;</span><br><span class="line">        Integer departmentid=emp.getDepartmentId();</span><br><span class="line">        Department detail = departmentClient.detail(departmentid);</span><br><span class="line">        emp.setDepartment(detail);</span><br><span class="line">    &#125;);</span><br><span class="line">    return employees;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3、调用方法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//员工列表</span><br><span class="line">    @GetMapping</span><br><span class="line">    public List&lt;Employee&gt; employees() &#123;</span><br><span class="line">        return employeeService.queryAll();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>4、测试 localhost:8085&#x2F;employee</p>
+<p>​<img src="assets/1750641026177-20250623091026-l0eezao.png">​</p>
+<h5 id="搭建网关子模块"><a href="#搭建网关子模块" class="headerlink" title="搭建网关子模块"></a>搭建网关子模块</h5><p>​<img src="assets/1750641026203-20250623091026-fiahag4.png">​</p>
+<p>1、开启服务注册发现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@SpringBootApplication</span><br><span class="line">@EnableDiscoveryClient</span><br><span class="line">public class GatewayApplication &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(GatewayApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、网关配置</p>
+<p>​<img src="assets/1750641026230-20250623091026-7jpeq28.png">​</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line"> cloud:</span><br><span class="line"> gateway:</span><br><span class="line"> routes: # 用来配置网关路由规则</span><br><span class="line"> - id: employee_route</span><br><span class="line"> uri: lb://EMPLOYESS</span><br><span class="line"> predicates:</span><br><span class="line"> - Path=/ems/employee</span><br><span class="line"> filters:</span><br><span class="line"> - StripPrefix=1</span><br><span class="line"></span><br><span class="line"> - id: department_route</span><br><span class="line"> uri: lb://DEPARTMENTS</span><br><span class="line"> predicates:</span><br><span class="line"> - Path=/ems/department</span><br><span class="line"> filters:</span><br><span class="line"> - StripPrefix=1</span><br></pre></td></tr></table></figure>
+
+<p>3、bootstrap.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server.port=8888</span><br><span class="line">spring.application.name=GATEWAY</span><br><span class="line">spring.cloud.nacos.server-addr=121.43.33.150:8848</span><br><span class="line">spring.cloud.nacos.config.server-addr=121.43.33.150:8848</span><br><span class="line">spring.cloud.nacos.discovery.server-addr=121.43.33.150:8848</span><br><span class="line"></span><br><span class="line">spring.cloud.nacos.config.enabled=false</span><br></pre></td></tr></table></figure>
+
+<p>4、通过网关访问成功</p>
+<p>​<img src="assets/1750641026261-20250623091026-wtledpq.png">​</p>
+<p>至此整个项目流程就打通了</p>
+<h3 id="14-3-部署"><a href="#14-3-部署" class="headerlink" title="14.3 部署"></a>14.3 部署</h3><h4 id="14-3-1-本地测试"><a href="#14-3-1-本地测试" class="headerlink" title="14.3.1 本地测试"></a>14.3.1 本地测试</h4><p>打包之前每个项目都需要有 springboot 的打包插件，没有的话要在项目中引入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br></pre></td></tr></table></figure>
+
+<p>安装之后出现这个就可以了</p>
+<p>​<img src="assets/1750641026300-20250623091026-9axd9l3.png">​</p>
+<p>先对父项目进行清理（clean）再打包（Package），common 公共模块是没主启动类的，这时候把父项目的 pom 文件的该插件注释调就行了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br></pre></td></tr></table></figure>
+
+<p>全部打包完成</p>
+<p>​<img src="assets/1750641026346-20250623091026-degw6s0.png">​</p>
+<p>先在本地测试 jar 是否成功</p>
+<p>运行员工模块</p>
+<p>​<img src="assets/1750641026376-20250623091026-mqh76yk.png">​</p>
+<p>运行部门模块</p>
+<p>​<img src="assets/1750641026410-20250623091026-9tyxkt9.png">​</p>
+<p>运行网关模块</p>
+<p>​<img src="assets/1750641026436-20250623091026-ajmpdi8.png">​</p>
+<p>都成功之后本地访问 <a target="_blank" rel="noopener" href="http://localhost:8888/ems/employee">http://localhost:8888/ems/employee</a></p>
+<p>到这里都没有问题说明本地测试通过了</p>
+<h4 id="14-3-2-编写-Dockerfile"><a href="#14-3-2-编写-Dockerfile" class="headerlink" title="14.3.2 编写 Dockerfile"></a>14.3.2 编写 Dockerfile</h4><p>docker 中需要有 JDK1.8 的镜像，安装 JDK</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull openjdk:8</span><br></pre></td></tr></table></figure>
+
+<p>​<img src="assets/1750641026467-20250623091026-bh6do6q.png">​</p>
+<p>在 idea 中编写员工模块 Dockerfile</p>
+<p>​<img src="assets/1750641026499-20250623091026-amfxod1.png">​</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM openjdk:8</span><br><span class="line">ENV APP_HOME=/apps</span><br><span class="line">WORKDIR $APP_HOME</span><br><span class="line">COPY ./ems-employess-1.0-SNAPSHOT.jar ./employess.jar</span><br><span class="line">EXPOSE 8086</span><br><span class="line">ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;]</span><br><span class="line">CMD [&quot;employess.jar&quot;]</span><br></pre></td></tr></table></figure>
+
+<p>部门模块 Dockerfile</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM openjdk:8</span><br><span class="line">ENV APP_HOME=/apps</span><br><span class="line">WORKDIR $APP_HOME</span><br><span class="line">COPY ./ems-departments-0.0.1-SNAPSHOT.jar ./departments.jar</span><br><span class="line">EXPOSE 8085</span><br><span class="line">ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;]</span><br><span class="line">CMD [&quot;departments.jar&quot;]</span><br></pre></td></tr></table></figure>
+
+<p>网关模块 Dockerfile</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM openjdk:8</span><br><span class="line">ENV APP_HOME=/apps</span><br><span class="line">WORKDIR $APP_HOME</span><br><span class="line">COPY ./ems-gateway-1.0-SNAPSHOT.jar ./gateway.jar</span><br><span class="line">EXPOSE 8888</span><br><span class="line">ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;]</span><br><span class="line">CMD [&quot;gateway.jar&quot;]</span><br></pre></td></tr></table></figure>
+
+<p>然后在 idea 中登录 docker 所在服务器</p>
+<p>​<img src="assets/1750641026538-20250623091026-qa7c2um.png">​</p>
+<h4 id="14-3-3-Dockerfile-文件上传"><a href="#14-3-3-Dockerfile-文件上传" class="headerlink" title="14.3.3 Dockerfile 文件上传"></a>14.3.3 Dockerfile 文件上传</h4><p>然后把项目的文件上传到服务自己建的 ems 文件夹中</p>
+<p>​<img src="assets/1750641026577-20250623091026-odok5wd.png">​</p>
+<h4 id="14-3-4-编写-docker-compose-yml"><a href="#14-3-4-编写-docker-compose-yml" class="headerlink" title="14.3.4 编写 docker-compose.yml"></a>14.3.4 编写 docker-compose.yml</h4><p>直接利用 dockerfile 文件的路径打包成镜像，最后编排运行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">version: &quot;3.8&quot;</span><br><span class="line"></span><br><span class="line">networks:</span><br><span class="line"> ems:</span><br><span class="line"></span><br><span class="line">volumes:</span><br><span class="line"> data:</span><br><span class="line"></span><br><span class="line">services:</span><br><span class="line"></span><br><span class="line"> employee:</span><br><span class="line"> build:</span><br><span class="line"> context: ./employee</span><br><span class="line"> dockerfile: Dockerfile</span><br><span class="line"> ports:</span><br><span class="line"> - &quot;8085:8085&quot;</span><br><span class="line"> networks:</span><br><span class="line"> - ems</span><br><span class="line"></span><br><span class="line"> department:</span><br><span class="line"> build:</span><br><span class="line"> context: ./department</span><br><span class="line"> dockerfile: Dockerfile</span><br><span class="line"> ports:</span><br><span class="line"> - &quot;8086:8086&quot;</span><br><span class="line"> networks:</span><br><span class="line"> - ems</span><br><span class="line"></span><br><span class="line"> gateway:</span><br><span class="line"> build:</span><br><span class="line"> context: ./gateway</span><br><span class="line"> dockerfile: Dockerfile</span><br><span class="line"> ports:</span><br><span class="line"> - &quot;8888:8888&quot;</span><br><span class="line"> networks:</span><br><span class="line"> - ems</span><br><span class="line"></span><br><span class="line"> nacos:</span><br><span class="line"> image: nacos/nacos-server:1.3.1</span><br><span class="line"> ports:</span><br><span class="line"> - &quot;8848:8848&quot;</span><br><span class="line"> environment:</span><br><span class="line"> - &quot;MODE=standalone&quot;</span><br><span class="line"> networks:</span><br><span class="line"> - ems</span><br><span class="line"></span><br><span class="line"> mysql:</span><br><span class="line"> image: mysql</span><br><span class="line"> ports:</span><br><span class="line"> - &quot;3306:3306&quot; #只写一个端口随机使用宿主机一个端口进行容器端口映射</span><br><span class="line"> environment:</span><br><span class="line"> - &quot;MYSQL_ROOT_PASSWORD=root&quot;</span><br><span class="line"> - &quot;MYSQL_DATABASE=ems&quot;</span><br><span class="line"> volumes:</span><br><span class="line"> - data:/var/lib/mysql</span><br><span class="line">      #- ./ems.sql:/docker-entrypoint-initdb.d/ems.sql</span><br><span class="line"> networks:</span><br><span class="line"> - ems</span><br></pre></td></tr></table></figure>
+
+<h4 id="14-3-5-项目启动"><a href="#14-3-5-项目启动" class="headerlink" title="14.3.5 项目启动"></a>14.3.5 项目启动</h4><p>在服务器 ems 文件夹中输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d department</span><br><span class="line"></span><br><span class="line">docker-compose up -d employee</span><br><span class="line"></span><br><span class="line">docker-compose up -d gateway</span><br></pre></td></tr></table></figure>
+
+<p>​<img src="assets/1750641026610-20250623091026-yayxl9j.png">​</p>
+<p><strong>报错</strong></p>
+<p>有个服务报错：Error: Invalid or corrupt jarfile employess.jar</p>
+<p>​<img src="assets/1750641026644-20250623091026-3wpcz1q.png">​</p>
+<p>检查了好几遍，重新打包上传还是这样，最后进目录查看发现 jar 包每次都没有上传完整</p>
+<p>​<img src="assets/1750641026683-20250623091026-ljibk37.png">​</p>
+<p>文件大小明显不对，因为打包错了里面没有主启动类，我在打包之前就删除这些，添加进来然后重新运行 mvn install 即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;/plugin&gt;</span><br><span class="line">        &lt;/plugins&gt;</span><br><span class="line">    &lt;/build&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这下正常了</p>
+<p>​<img src="assets/1750641026716-20250623091026-rzmndh4.png">​</p>
+<p>再次运行因为之前构建的镜像还在，即便重新上传还是运行的之前构建的，没有效果，所以的删除之前构建过的错误镜像，三个都运行成功</p>
+<p>​<img src="assets/1750641026748-20250623091026-zp8sdv1.png">​</p>
+<p>部署成功！</p>
+<p>​<img src="assets/1750641026778-20250623091026-tps12mw.png">​</p>
+<h3 id="14-4-总结"><a href="#14-4-总结" class="headerlink" title="14.4 总结"></a>14.4 总结</h3><p>还有很多可以优化的地方，因为本节是着重演示部署流程，细节方面就没有优化了</p>
+<p>这就是一整个部署的大概流程，但每次项目代码如果有更改，又需要手动重新生成镜像然后在服务器重新运行，还是不太方便，后续会出 Jenkins+Docker 自动化部署 SpringCloud，实现代码提交自动进行编译打包上传并部署，简化在部署方面的操作。</p>
+<p>项目细节难免有纰漏之处，附项目地址：<a target="_blank" rel="noopener" href="https://gitee.com/yanglingcong/spring-cloud-docker">https://gitee.com/yanglingcong/spring-cloud-docker</a></p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="../../../../My-Third-Blog">
+        <span>My-Third-Blog</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo"><span class="toc-number">1.</span> <span class="toc-text">Docker 搭建部署 SpringCloud 微服务项目 Demo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E5%9B%9B%E3%80%81Docker-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E2%80%93Docker-%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-Demo"><span class="toc-number">1.1.</span> <span class="toc-text">十四、Docker 入门系列 –Docker 搭建部署 SpringCloud 微服务项目 Demo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#14-1-%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.1.</span> <span class="toc-text">14.1 环境介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#14-1-1-%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">14.1.1 部署流程</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-2-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.1.2.</span> <span class="toc-text">14.2 环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#14-2-1-Centos7-X-%E5%AE%89%E8%A3%85-Docker"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">14.2.1 Centos7.X 安装 Docker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-2-2-Docker-%E5%AE%89%E8%A3%85-mysql%E3%80%81nacos-%E9%95%9C%E5%83%8F"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">14.2.2 Docker 安装 mysql、nacos 镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-mysql"><span class="toc-number">1.1.2.2.1.</span> <span class="toc-text">安装 mysql</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-nacos"><span class="toc-number">1.1.2.2.2.</span> <span class="toc-text">安装 nacos</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-2-3-%E6%90%AD%E5%BB%BA-SpringCloud-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">14.2.3 搭建 SpringCloud 微服务模块</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E7%88%B6%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.1.</span> <span class="toc-text">搭建父工程模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E5%91%98%E5%B7%A5%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.2.</span> <span class="toc-text">搭建员工子模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E9%83%A8%E9%97%A8%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.3.</span> <span class="toc-text">搭建部门子模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8A%BD%E5%8F%96%E5%85%AC%E5%85%B1%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.4.</span> <span class="toc-text">抽取公共模块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95"><span class="toc-number">1.1.2.3.5.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E7%BD%91%E5%85%B3%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-number">1.1.2.3.6.</span> <span class="toc-text">搭建网关子模块</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-3-%E9%83%A8%E7%BD%B2"><span class="toc-number">1.1.3.</span> <span class="toc-text">14.3 部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#14-3-1-%E6%9C%AC%E5%9C%B0%E6%B5%8B%E8%AF%95"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">14.3.1 本地测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-3-2-%E7%BC%96%E5%86%99-Dockerfile"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">14.3.2 编写 Dockerfile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-3-3-Dockerfile-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">14.3.3 Dockerfile 文件上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-3-4-%E7%BC%96%E5%86%99-docker-compose-yml"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">14.3.4 编写 docker-compose.yml</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-3-5-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8"><span class="toc-number">1.1.3.5.</span> <span class="toc-text">14.3.5 项目启动</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-4-%E6%80%BB%E7%BB%93"><span class="toc-number">1.1.4.</span> <span class="toc-text">14.4 总结</span></a></li></ol></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2025 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        LaoKang
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="../js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="../js/meadow.js"></script>
+
+</body>
+</html >
